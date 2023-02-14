@@ -1,0 +1,30 @@
+computers:
+  laptop:
+  - id: 1
+    nom: Asus 34-HB
+    cpu: 4
+    ram: 4
+    pantalla: 15
+    apps:
+      - Antivirus
+      - SO Microsoft
+      - Office 360
+  - id: 2
+    nom: Razor 578-H
+    cpu: 8
+    ram: 8
+    pantalla: 16
+    apps:
+      - Antivirus
+      - SO Linux
+      - Libre Office 
+    
+  - id: 3
+    nom: Asus 34-HB
+    cpu: 12
+    ram: 16
+    pantalla: 17
+    apps:
+      - Antivirus
+      - SO Ubuntu coret
+      - Open Office 
