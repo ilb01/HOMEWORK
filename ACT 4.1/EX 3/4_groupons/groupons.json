@@ -1,0 +1,12 @@
+{
+    "id": 1,
+    "nombre": "3 clases de zumba",
+    "descripcion": "Aprende con nuestros mejores profesores...",
+    "categoria": [
+        "deporte",
+        "salud"
+    ],
+    "descuento": "20%",
+    "precio_inicio": 100,
+    "precio_final": 80
+}

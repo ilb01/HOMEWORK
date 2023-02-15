@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+            crossorigin="anonymous">
+        <title>TOY STORY</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="card mb-3 mt-4">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="img/toystory.png" class="card-img"
+                            style="width:60%">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 id="film-title" class="card-title"></h5>
+                            <div class="card-text">
+                                <dl class="row">
+                                    <dt class="col-sm-3">Sinopsis</dt>
+                                    <dd id="film-synopsi" class="col-sm-9"></dd>
+                                    <dt class="col-sm-3">Gènere</dt>
+                                    <dd id="film-genre" class="col-sm-9"></dd>
+                                    <dt class="col-sm-3">Estrena</dt>
+                                    <dd id="film-premiere" class="col-sm-9"></dd>
+                                    <dt class="col-sm-3 text-truncate">Edad
+                                        recomendado:</dt>
+                                    <dd id="film-age" class="col-sm-9"><img
+                                            src="img/age-tp.png"
+                                            style="width:20px" /></dd>
+
+                                    <dt class="col-sm-3 text-truncate">Horario</dt>
+                                    <dd id="film-sessions" class="col-sm-9"></dd>
+                                </dl>
+                                <div class="container text-center">
+                                    <button type="button" class="btn
+                                        btn-warning" name="button"
+                                        onclick="history.back();">Torna</button>
+                                </div>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Descuento
+                                    10% para niños menores de 8 años</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript">
+	
+		let pelicula = {
+    "titulo": "Toy Story",
+    "sinopsi": "Los juguetes de Andy, un niño de 6 años, temen que haya llegado su hora y que un nuevo regalo de cumpleaños les sustituya en el corazón de su dueño. Woody, un vaquero que ha sido hasta ahora el juguete favorito de Andy, trata de tranquilizarlos hasta que aparece Buzz Lightyear, un héroe espacial dotado de todo tipo de avances tecnológicos. Woody es relegado a un segundo plano. Su constante rivalidad se transformará en una gran amistad cuando ambos se pierden en la ciudad sin saber cómo volver a casa.",
+    "genero": "infantil",
+    "entrena": "Si",
+    "edad": 3,
+    "sesiones": [
+        "13:00",
+        "16:00",
+        "18:00",
+        "20:00"
+    ]
+};
+
+		document.getElementById("film-title").innerHTML = pelicula.titulo;
+		document.getElementById("film-synopsi").innerHTML = pelicula.sinopsi;
+		document.getElementById("film-genre").innerHTML = pelicula.genero;
+		document.getElementById("film-age").innerHTML = pelicula.edad;
+		document.getElementById("film-premiere").innerHTML = (pelicula.estrena ? "Sí" : "No");
+
+		const contenidorSessions = document.getElementById("film-sessions");
+		for (let hora of pelicula.sessions) {
+			contenidorSessions.innerHTML += ` <span class="badge bg-primary py-2 my-2">${hora}</span> `;
+		}
+
+	</script>
+    </body>
+
+</html>

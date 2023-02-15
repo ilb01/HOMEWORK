@@ -1,0 +1,23 @@
+{
+    "id": 1,
+    "titulo": "FIFA 23",
+    "genero": [
+        "deporte"
+    ],
+    "pegi": 2,
+    "precio": 69,
+    "desarrollador": "Ea Sports",
+    "editor": "Ea Sports",
+    "release": "23/09/2022",
+    "plataformas": [
+        "playstation 4",
+        "playstation 5",
+        "xbox one"
+    ],
+    "idiomas": [
+        "Español",
+        "Francés",
+        "Catalán",
+        "Italiano"
+    ]
+}

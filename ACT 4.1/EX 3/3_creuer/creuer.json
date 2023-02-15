@@ -1,0 +1,26 @@
+{
+    "id": 1,
+    "titulo": "Viaje a Venecia",
+    "descripcion": "Un viaje para el dia de San Valentin",
+    "salida": "Palma",
+    "inici": "12/02/2023",
+    "final": "17/02/2023",
+    "precio": 1000.2,
+    "itinerari": [
+        {
+            "ciudad": "Barcelona",
+            "pais": "España",
+            "dias": 2
+        },
+        {
+            "ciudad": "Roma",
+            "pais": "Italia",
+            "dias": 1
+        },
+        {
+            "ciudad": "Venecia",
+            "pais": "Italia",
+            "dias": 4
+        }
+    ]
+}
