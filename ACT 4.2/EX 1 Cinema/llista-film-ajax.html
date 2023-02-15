@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css?_cacheOverride=1574773860125"
+		integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Poppins|Varela+Round&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/styles.css">
+	<title>CINEMADOR</title>
+</head>
+
+<body>
+	<!-- Capçalera -->
+	<header class="jumbotron jumbotron-fluid py-2 my-0">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-9" style="padding-left:90px">
+					<h1 class="display-6">CINEMADOR</h1>
+					<p class="lead">Un cinema únic per a tu</p>
+				</div>
+				<div class="col-3 text-right">
+					<p><i class="fas fa-user-lock"></i> Sign up</p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Menú de navegació -->
+	<div class="sticky-top">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light  position-sticky shadow p-3 mb-0 bg-white rounded">
+			<!-- Visible quan es fa petit -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+				aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Cartellera</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Mapa</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Compra d'entrades</a><span class="sr-only">(current)</span>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="nom pel·lícula">
+					<button class="btn btn-warning my-2 my-sm-0" id="busca-film" type="button"
+						onclick="getFilms()">Cerca</button>
+				</form>
+			</div>
+		</nav>
+	</div>
+
+	<!-- Path actual -->
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Home</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Cartellera</li>
+		</ol>
+	</nav>
+
+	<!-- Categories -->
+	<div class="container py-2 mb-4">
+		<ul class="nav justify-content-center">
+			<li class="nav-item">
+				<a class="nav-link active" href="#">Totes les categories</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Aventures</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Acció</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Dibuxos</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Terror</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- Contingut cental -->
+	<div class="container">
+
+		<!-- 1r - Llista pel·lícules -->
+		<div class="row">
+			<div class="col-12">
+				<ul id="contingut" class="list-unstyled"></ul>
+			</div>
+		</div>
+
+		<!-- 2r - Paginació -->
+		<div class="row">
+			<div class="col-12">
+				<nav aria-label="Page navigation">
+					<ul class="pagination justify-content-center">
+						<li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span
+									aria-hidden="true">&laquo;</span></a></li>
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#" aria-label="Next"><span
+									aria-hidden="true">&raquo;</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+
+	<!--Dades de peu de pàgina -->
+	<footer class="container pt-1 my-md-2 pt-md-2 border-top">
+		<div class="row">
+			<div class="col-12 col-md text-center">
+				<small class="d-block mb-3 text-muted">&copy; PixelBit SA 2018-2019</small>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<h5>Sobre nosaltres</h5>
+				<p>Cinemador, empresa d’exhibició cinematográfica líder a Baleares, amb més de 40 títols únics,
+					seleccionats per donar la millor experiència.</p>
+			</div>
+			<div class="col-3">
+				<h5>Informació d'interés</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="text-muted" href="#">Política de cookies</a></li>
+					<li><a class="text-muted" href="#">Avís Legal</a></li>
+					<li><a class="text-muted" href="#">Informació R.G.P.D.</a></li>
+					<li><a class="text-muted" href="#">Informació corporativa</a></li>
+				</ul>
+			</div>
+			<div class="col-3">
+				<h5>Grup CinemaDor</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="text-muted" href="#">Qui som?</a></li>
+					<li><a class="text-muted" href="#">Lloga la teva sala</a></li>
+					<li><a class="text-muted" href="#">Vols fer feina amb nosaltres?</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript">
+
+		// Modifica les dades de la taula amb els usuaris trobats al json
+		function printListaPelis(lista) {
+			let content = document.querySelector('#contingut');
+			content.innerHTML = '';
+			for (let peli of lista) {
+				content.innerHTML += `
+				<li class="media">
+					<img src="img/${peli.img}" class="mr-3" alt="..." style="width:100px">
+					<div class="media-body">
+						<a href="detall-film.html"><h5 class="mt-0 mb-1">${peli.titol}</h5></a>
+						<span class="badge btn-warning">Estrena</span>
+						<p class="py-0 my-0">${peli.sinopsi}</p>
+						<p class="py-0 my-0">2h 8min</p>
+						<p class="py-0 my-0">16</p>
+					</div>
+				</li>
+				`;
+			}
+		}
+
+		// Obtenir les dades de les pelis
+		function getFilms() {
+			// Petició asíncrona
+			fetch('./js/films.json')
+				.then(result => result.json())
+				.then((data) => {
+					// Actualitza les dades de la llista de pelies
+					printListaPelis(data);
+				});
+		}
+
+		function getFilmsMillorat() {
+			// Petició asíncrona amb control d'errors
+			fetch('./js/films.json')
+				.then(result => result.json())
+				.then((data) => {
+					// Actualitza les dades de la llista de pelies
+					printListaPelis(data);
+				})
+				.catch(error => console.log(error));
+		}
+
+		getFilms();
+
+	</script>
+
+</body>
+
+</html>

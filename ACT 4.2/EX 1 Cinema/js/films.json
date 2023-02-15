@@ -1,0 +1,58 @@
+[
+	{
+		"titol": "El rey león 2 remake forever",
+		"sinopsi": "Después del asesinato de su padre, un joven príncipe león huye de su reino solo para aprender el verdadero significado de responsabilidad y valentía.",
+		"genere": "Dibuixos animats",
+		"edat": 3,
+		"estrena": false,
+		"img": "rey-leon.jpg",
+		"sessions": [
+			"17:00",
+			"19:00",
+			"21:00",
+			"23:00"
+		]
+	},
+	{
+		"titol": "Toy Story",
+		"sinopsi": "Los juguetes de Andy, un niño de 6 años, temen que haya llegado su hora y que un nuevo regalo de cumpleaños les sustituya en el corazón de su dueño. Woody, un vaquero que ha sido hasta ahora el juguete favorito de Andy, trata de tranquilizarlos hasta que aparece Buzz Lightyear, un héroe espacial dotado de todo tipo de avances tecnológicos. Woody es relegado a un segundo plano. Su constante rivalidad se transformará en una gran amistad cuando ambos se pierden en la ciudad sin saber cómo volver a casa.",
+		"genere": "infantil",
+		"edat": 3,
+		"entrena": "Si",
+		"img": "toystory.jpg",
+		"sessions": [
+			"13:00",
+			"16:00",
+			"18:00",
+			"20:00"
+		]
+	},
+	{
+		"titol": "Terminator",
+		"sinopsi": "Después del asesinato de su padre, un joven príncipe león huye de su reino solo para aprender el verdadero significado de responsabilidad y valentía.",
+		"genere": "Acción",
+		"edat": 16,
+		"estrena": false,
+		"img": "terminator.jpg",
+		"sessions": [
+			"17:00",
+			"19:00",
+			"21:00",
+			"23:00"
+		]
+	},
+	{
+		"titol": "Predator",
+		"sinopsi": "Después del asesinato de su padre, un joven príncipe león huye de su reino solo para aprender el verdadero significado de responsabilidad y valentía.",
+		"genere": "Terror",
+		"edat": 1,
+		"estrena": false,
+		"img": "predator.jpg",
+		"sessions": [
+			"17:00",
+			"19:00",
+			"21:00",
+			"23:00"
+		]
+	}
+]
