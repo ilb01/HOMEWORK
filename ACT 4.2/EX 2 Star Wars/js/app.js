@@ -9,12 +9,13 @@ let figuresList = [];
 
 // Petició asíncona per recuperar les figures
 function getFigures() {
-    fetch('./data/star-wars-figures.json')
+    fetch('./data/star-wars.json')
         .then(response => response.json())
         .then(data => {
             // Carregan les daddes JSON a una variable global
-            figuresList = data;
-            printFigures(data);
+            console.log("DATOS DE JSON - PAGE-", data.page);
+            figuresList = data.items;
+            printFigures(figuresList);
         });
 }
 
