@@ -72,7 +72,7 @@ const addProduct = (idCamiseta) => {
         carrito.push(producto);
     }
 
-    localStorage.setItem("carrito", JSON.stringify(carrito));
+    localStorage.setItem("carrito", JSON.stringify(carrito)); //stringify --> transforma un objecto json a cadena de texto
 
     pintarCarrito();
 };
