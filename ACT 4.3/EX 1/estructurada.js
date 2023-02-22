@@ -247,27 +247,52 @@ function ex4Filter(productos) {
 
 // Funció que retorni els productes en stock que incloguin en el seu nom la paraula “gaming”
 function ex5Filter(productos) {
-
+  let productoIncluye = [];
+  for (let pro of productos) {
+    if (pro.stock && pro.name.toUpperCase().includes("GAMING")) {
+      productoIncluye.push(pro);
+    }
+  }
+  return productoIncluye;
 }
 // console.log("Ex.5:", ex5Filter(productosList));
 
 // Funció que retorni verdader o false si hi ha qualque producte de la marca samsung i la categoria “MOBILE”
 function ex6Filter(productos) {
-
+  for (let pro of productos) {
+    if (pro.brand.toUpperCase() === "SAMSUNG" && pro.category.toUpperCase() === "MOBILE") {
+      return true
+    }
+  }
+  return false;
 }
-//console.log("Ex.6:", ex6Filter(productosList));
+// console.log("Ex.6:", ex6Filter(productosList));
 
 // Funció que retorni verdader o false si hi ha qualque producte sense stock
 function ex7Filter(productos) {
-
+  for (let pro of productos) {
+    if (!pro.stock) {
+      return true
+    }
+  }
+  return false;
 }
-//console.log("Ex.7:", ex7Filter(productosList));
+// console.log("Ex.7:", ex7Filter(productosList));
 
 // Funció que retorni un nou array només amb els camps id, name i price de cada producte
 function ex8Filter(productos) {
-
+  let arrayProductos = [];
+  for (const pro of productos) {
+    let nuevoProducto = {
+      "id": pro.id,
+      "name": pro.name,
+      "price": pro.price
+    };
+    arrayProductos.push(nuevoProducto);
+  }
+  return arrayProductos;
 }
-//console.log("Ex.8:", ex8Filter(productosList));
+// console.log("Ex.8:", ex8Filter(productosList));
 
 /*
 Funció que retorni un nou array només amb els camps name, category  i price, però seguint aquests requeriments:
@@ -276,27 +301,49 @@ Funció que retorni un nou array només amb els camps name, category  i price, p
 - La categoria només en les tres primeres lletres
 */
 function ex9Filter(productos) {
-
+  let arrayProductos = [];
+  for (const pro of productos) {
+    let nuevoProducto = {
+      "name": pro.name.toUpperCase(),
+      "categoria": pro.category.substring(0, 3),
+      "price": (pro.price + "€").replace(".", ",")
+    };
+    arrayProductos.push(nuevoProducto);
+  }
+  return arrayProductos;
 }
-//console.log("Ex.9:", ex9Filter(productosList));
+// console.log("Ex.9:", ex9Filter(productosList));
 
 // Funció que retorni verdader o false si tots els productes es troben en stock i preu superior a 0.
 function ex10Filter(productos) {
-
+  for (const pro of productos) {
+    if (pro.stock && pro.price < 0) {
+      return true
+    }
+    return false
+  }
 }
-//console.log("Ex.10:", ex10Filter(productosList));
+// console.log("Ex.10:", ex10Filter(productosList));
 
 // Funció que retorni el producte (primer que trobi a la llista) que sigui de la categoria “GAME” i amb el nom “The Witcher”
 function ex11Filter(productos) {
-
+  for (let pro of productos) {
+    if (pro.category === "GAME" &&
+      pro.name.includes("The Witcher"))
+      return pro;
+  }
 }
-//console.log("Ex.11:", ex11Filter(productosList));
+// console.log("Ex.11:", ex11Filter(productosList));
 
 // Funció que retorni el producte (primer que trobi a la llista) que sigui de la categoria “COMPUTER”, amb el nom “presario” i marca “MSI”.
 function ex12Filter(productos) {
-
+  for (let pro of productos) {
+    if (pro.category === "COMPUTER" &&
+      pro.name.includes("presario") && pro.brand === "MSI")
+      return pro;
+  }
 }
-//console.log("Ex.12:", ex12Filter(productosList));
+// console.log("Ex.12:", ex12Filter(productosList));
 
 // Funció que torni els ordinadors o portàtils amb un descompte superior o igual a 50%  i afegint una propietat amb el seu preu de descompte.
 function ex13Filter(productos) {
