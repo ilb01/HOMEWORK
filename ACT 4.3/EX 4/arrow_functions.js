@@ -1,4 +1,4 @@
-const productsList = [
+const productosList = [
     {
         "id": 1,
         "name": "TV Cinema plus",

@@ -1,4 +1,4 @@
-const productsList = [
+const productosList = [
   {
     "id": 1,
     "name": "TV Cinema plus",
@@ -197,53 +197,72 @@ const productsList = [
 ];
 
 // Funció que retorni el producte més car
-function ex1Filter(products) {
-
+function ex1Filter(productos) {
+  return productos.sort((productos1, productos2) => productos2.price - productos1.price)[0];
 }
-//console.log("Ex.1:", ex1Filter(productsList));
+// console.log("Ex.1:", ex1Filter(productosList));
 
 // Funció que retorni el producte més barat
-function ex2Filter(products) {
-
+function ex2Filter(productos) {
+  return productos.sort((productos1, productos2) => productos1.price - productos2.price)[0];
 }
-//console.log("Ex.2:", ex2Filter(productsList));
+console.log("Ex.2:", ex2Filter(productosList));
 
 // Funció que retorni els productes entre 100 i 500 euros de la categoria “ELEC”
-function ex3Filter(products) {
-
+function ex3Filter(productos) {
+  return nuevoProductos = productos.filter(pro =>
+    pro.price > 100 &&
+    pro.price < 500 &&
+    pro.category === "ELEC");
 }
-//console.log("Ex.3:", ex3Filter(productsList));
+// console.log("Ex.3:", ex3Filter(productosList));
 
 
 // Funció que retorni els productes entre 500 i 600 euros de la categoria “COMPUTER” o “LAPTOP”.
-function ex4Filter(products) {
+function ex4Filter(productos) {
+  return nuevoProductos = productos.filter(pro =>
+    (pro.price > 500 &&
+      pro.price < 600) &&
+    pro.category === "COMPUTER" ||
+    pro.category === "LAPTOP");
 
 }
-//console.log("Ex.4:", ex4Filter(productsList));
+// console.log("Ex.4:", ex4Filter(productosList));
 
 // Funció que retorni els productes en stock que incloguin en el seu nom la paraula “gaming”
-function ex5Filter(products) {
-
+function ex5Filter(productos) {
+  // .toUpperCase --> PARA PONER EN MAYÚSCULAS
+  // .filter --> Buscar todos arrays que contenga eso
+  return productos.filter(pro => pro.stock && pro.name.toUpperCase().includes("GAMING"));
 }
-// console.log("Ex.5:", ex5Filter(productsList));
+// console.log("Ex.5:", ex5Filter(productosList));
+
+
+// SOME --> FUNCION PARA VERDADERO O FALSO
 
 // Funció que retorni verdader o false si hi ha qualque producte de la marca samsung i la categoria “MOBILE”
-function ex6Filter(products) {
-
+function ex6Filter(productos) {
+  return productos.some(pro => pro.brand.toUpperCase() === "SAMSUNG" && pro.category.toUpperCase() === "MOBILE");
 }
-//console.log("Ex.6:", ex6Filter(productsList));
+// console.log("Ex.6:", ex6Filter(productosList));
 
 // Funció que retorni verdader o false si hi ha qualque producte sense stock
-function ex7Filter(products) {
-
+function ex7Filter(productos) {
+  return productos.some(pro => !pro.stock);
 }
-//console.log("Ex.7:", ex7Filter(productsList));
+// console.log("Ex.7:", ex7Filter(productosList));
 
 // Funció que retorni un nou array només amb els camps id, name i price de cada producte
-function ex8Filter(products) {
-
+function ex8Filter(productos) {
+  return productos.map(pro => {
+    return {
+      "id": pro.id,
+      "name": pro.name,
+      "price": pro.price
+    };
+  });
 }
-//console.log("Ex.8:", ex8Filter(productsList));
+// console.log("Ex.8:", ex8Filter(productosList));
 
 /*
 Funció que retorni un nou array només amb els camps name, category  i price, però seguint aquests requeriments:
@@ -251,43 +270,58 @@ Funció que retorni un nou array només amb els camps name, category  i price, p
 - Nom en majúscules
 - La categoria només en les tres primeres lletres
 */
-function ex9Filter(products) {
-
+function ex9Filter(productos) {
+  return productos.map(pro => {
+    return {
+      // .toUpperCase() --> PARA PONER EN MAYÚSCULAS
+      "name": pro.name.toUpperCase(),
+      // substring(inicio, final) --> para escoger
+      "categoria": pro.category.substring(0, 3),
+      // .replace(valor que tengo,  a lo que quiero remplazar) --> remplazar un valor
+      "price": (pro.price + "€").replace(".", ",")
+    };
+  });
 }
-//console.log("Ex.9:", ex9Filter(productsList));
+// console.log("Ex.9:", ex9Filter(productosList));
 
 // Funció que retorni verdader o false si tots els productes es troben en stock i preu superior a 0.
-function ex10Filter(products) {
-
+function ex10Filter(productos) {
+  return productos.some(pro => pro.stock && pro.price > 0);
 }
-//console.log("Ex.10:", ex10Filter(productsList));
+// console.log("Ex.10:", ex10Filter(productosList));
 
 // Funció que retorni el producte (primer que trobi a la llista) que sigui de la categoria “GAME” i amb el nom “The Witcher”
-function ex11Filter(products) {
-
+function ex11Filter(productos) {
+  // .find --> Buscar el primer array que contenga eso
+  return productos.find(pro => pro.category === "GAME" && pro.name === "The Witcher");
 }
-//console.log("Ex.11:", ex11Filter(productsList));
+// console.log("Ex.11:", ex11Filter(productosList));
 
 // Funció que retorni el producte (primer que trobi a la llista) que sigui de la categoria “COMPUTER”, amb el nom “presario” i marca “MSI”.
-function ex12Filter(products) {
+function ex12Filter(productos) {
 
 }
-//console.log("Ex.12:", ex12Filter(productsList));
+//console.log("Ex.12:", ex12Filter(productosList));
 
 // Funció que torni els ordinadors o portàtils amb un descompte superior o igual a 50%  i afegint una propietat amb el seu preu de descompte.
-function ex13Filter(products) {
+function ex13Filter(productos) {
 
 }
-//console.log("Ex.13:", ex13Filter(productsList));
+//console.log("Ex.13:", ex13Filter(productosList));
 
 // Funció que retorni els ordinadors diferents a la marca “HP”, en stock i que sense camp oferta.
-function ex14Filter(products) {
+function ex14Filter(productos) {
 
 }
-//console.log("Ex.14:", ex14Filter(productsList));
+//console.log("Ex.14:", ex14Filter(productosList));
 
 // Funció que retorni el producte amb el codi/id 18, però només els camps id, name i price.
-function ex15Filter(products) {
-
+function ex15Filter(productos) {
+  const producto = productos.find(p => p.id === 18);
+  return producto ? {
+    "id": 18,
+    "name": producto.name,
+    "price": producto.price,
+  } : {};
 }
-//console.log("Ex.15:", ex15Filter(productsList));
+// console.log("Ex.15:", ex15Filter(productosList));
