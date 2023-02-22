@@ -206,7 +206,7 @@ function ex1Filter(productos) {
   }
   return productoCaro;
 }
-console.log("Ex.1:", ex1Filter(productosList));
+// console.log("Ex.1:", ex1Filter(productosList));
 
 // Funció que retorni el producte més barat
 function ex2Filter(productos) {
@@ -312,7 +312,6 @@ function ex14Filter(productos) {
 
 // Funció que retorni el producte amb el codi/id 18, però només els camps id, name i price.
 function ex15Filter(productos) {
-  let productos = {};
   for (let pro of productos) {
     if (pro.id === 18) {
       const product = {
@@ -325,4 +324,4 @@ function ex15Filter(productos) {
   }
   return productos;
 }
-console.log("Ex.15:", ex15Filter(productosList));
+// console.log("Ex.15:", ex15Filter(productosList));

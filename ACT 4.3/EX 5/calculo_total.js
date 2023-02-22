@@ -201,14 +201,14 @@ function calculaTotalEx1(lista) {
 
 }
 
-console.log("Ex.1:", calculateTotalEx1(productosList));
+console.log("Ex.1:", calculaTotalEx1(productosList));
 
 // 2.Funció que torni el nombre de productes de la categoria “GAME” i preu superior a 10€. 
 function calculaTotalEx2(lista) {
 
 }
 
-// console.log("Ex.2:", calculateTotalEx2(productosList));
+// console.log("Ex.2:", calculaTotalEx2(productosList));
 
 /*
 3. Funció que torni el nombre de productes en oferta que es troben entre els rangs de preus següents:
@@ -220,14 +220,14 @@ function calculateTotalEx3(lista) {
 
 }
 
-// console.log("Ex.3:", calculateTotalEx3(productosList));
+// console.log("Ex.3:", calculaTotalEx3(productosList));
 
 //  4.Funció que torni la suma total del preus dels productes de la marca “Samsung”
 function calculaTotalEx4(lista) {
 
 }
 
-// console.log("Ex.4:", calculateTotalEx4(productosList));
+// console.log("Ex.4:", calculaTotalEx4(productosList));
 
 // 5.Funció que torni la suma total del preus dels productes, aplicant el descompte corresponent si en té, 
 // de la categoria “MOBILE” i “LAPTOP”.
@@ -235,4 +235,4 @@ function calculaTotalEx5(lista) {
 
 }
 
-// console.log("Ex.5:", calculateTotalEx5(productosList));
+// console.log("Ex.5:", calculaTotalEx5(productosList));
