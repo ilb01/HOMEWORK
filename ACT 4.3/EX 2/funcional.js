@@ -262,7 +262,7 @@ function ex8Filter(productos) {
     };
   });
 }
-// console.log("Ex.8:", ex8Filter(productosList));
+console.log("Ex.8:", ex8Filter(productosList));
 
 /*
 Funció que retorni un nou array només amb els camps name, category  i price, però seguint aquests requeriments:

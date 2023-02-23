@@ -347,15 +347,31 @@ function ex12Filter(productos) {
 
 // Funció que torni els ordinadors o portàtils amb un descompte superior o igual a 50%  i afegint una propietat amb el seu preu de descompte.
 function ex13Filter(productos) {
-
+  let arrayProductos = [];
+  for (let pro of productos) {
+    if (pro.category === "COMPUTER" || pro.category === "LAPTOP" && pro.discount >= 50) {
+      let descuentoPrice = (pro.price * pro.discount / 100);
+      // AÑADE OTRO OBJECTO JSON DE FINAL PRICE
+      pro.finalPrecio = pro.price - descuentoPrice;
+      // .push añade otro objecto json o algo de array
+      arrayProductos.push(pro);
+    }
+  }
+  return arrayProductos;
 }
-//console.log("Ex.13:", ex13Filter(productosList));
+// console.log("Ex.13:", ex13Filter(productosList));
 
 // Funció que retorni els ordinadors diferents a la marca “HP”, en stock i que sense camp oferta.
 function ex14Filter(productos) {
-
+  let arrayProductos = [];
+  for (let pro of productos) {
+    if (pro.brand != "HP" && pro.category === "COMPUTER" && pro.stock && !pro.onSale) {
+      arrayProductos.push(pro);
+    }
+  }
+  return arrayProductos;
 }
-//console.log("Ex.14:", ex14Filter(productosList));
+// console.log("Ex.14:", ex14Filter(productosList));
 
 // Funció que retorni el producte amb el codi/id 18, però només els camps id, name i price.
 function ex15Filter(productos) {
