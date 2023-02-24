@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="./img/Spotify-PNG.png" />
+        <script defer="defer" src="./js/app.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Playlist Spotify</title>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th><span></span></th>
+                    <th><span>Titulo</span></th>
+                    <th><span>Artista</span></th>
+                    <th><span>Álbum</span></th>
+                    <th><span><i class="fa fa-calendar" aria-hidden="true"></i></span></th>
+                    <th><span><i class="fa-regular fa-clock"></i></span></th>
+
+                </tr>
+            </thead>
+            <select name="order" id="orderFilter">
+                <option value="-1">FILTRAR</option>
+                <option value="N">Ordenar por Titulo (A-Z)</option>
+                <option value="O">Ordenar por Artista (A-Z)</option>
+            </select>
+            <tbody id="container-canciones"></tbody>
+        </table>
+    </body>
+</html>

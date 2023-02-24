@@ -206,7 +206,7 @@ function ex1Filter(productos) {
 function ex2Filter(productos) {
   return productos.sort((productos1, productos2) => productos1.price - productos2.price)[0];
 }
-console.log("Ex.2:", ex2Filter(productosList));
+// console.log("Ex.2:", ex2Filter(productosList));
 
 // Funció que retorni els productes entre 100 i 500 euros de la categoria “ELEC”
 function ex3Filter(productos) {
@@ -262,7 +262,7 @@ function ex8Filter(productos) {
     };
   });
 }
-console.log("Ex.8:", ex8Filter(productosList));
+// console.log("Ex.8:", ex8Filter(productosList));
 
 /*
 Funció que retorni un nou array només amb els camps name, category  i price, però seguint aquests requeriments:
@@ -305,13 +305,18 @@ function ex12Filter(productos) {
 
 // Funció que torni els ordinadors o portàtils amb un descompte superior o igual a 50%  i afegint una propietat amb el seu preu de descompte.
 function ex13Filter(productos) {
-
+  return productos.filter(pro => (pro.category === "COMPUTER" || pro.category === "LAPTOP") && pro.discount >= 50)
+    .map(p => {
+      let descuentoPrecio = (p.price * p.discount / 100);
+      p.finalPrecio = p.price - descuentoPrecio;
+      return p;
+    });
 }
-//console.log("Ex.13:", ex13Filter(productosList));
+console.log("Ex.13:", ex13Filter(productosList));
 
 // Funció que retorni els ordinadors diferents a la marca “HP”, en stock i que sense camp oferta.
 function ex14Filter(productos) {
-
+  return products.filter(pro => (pro.brand != "HP" && pro.category === "COMPUTER" && pro.stock && !pro.discount));
 }
 //console.log("Ex.14:", ex14Filter(productosList));
 

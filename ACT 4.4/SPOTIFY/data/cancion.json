@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "titulo": "Good4 U",
+        "artista": "Olivia Rodrigo",
+        "album": "SOUR",
+        "fecha": "25 jun 2021",
+        "duración": "2:58"
+    },
+    {
+        "id": 2,
+        "titulo": "BED",
+        "artista": "Joel Corry RAYE, David Guetta",
+        "album": "BED",
+        "fecha": "29 abr 2021",
+        "duración": "2:58"
+    },
+    {
+        "id": 3, 
+        "titulo": "STAY",
+        "artista": "The Kid LAROL, Justin Bieber",
+        "album": "LOVE FOREVER YOU",
+        "fecha": "hace 22 días",
+        "duración": "2:21"
+    },
+    {
+        "id": 4, 
+        "titulo": "Bad Habits",
+        "artista": "Ed Sheeran",
+        "album": "Bad Habits",
+        "fecha": "5 jul 2021",
+        "duración": "3:51"
+    },
+    {
+        "id": 5,
+        "titulo": "Levitating (Feat. DaBaby)",
+        "artista": "Dua Lipa, DaBaby",
+        "album": "Levitating (Feat. DaBaby)",
+        "fecha": "29 abr 2021",
+        "duración": "3:23"
+    },
+    {
+        "id": 6,
+        "titulo": "Friday (Feat. DaBaby)",
+        "artista": "Riton, Mufasa & Hypeman",
+        "album": "Dopamime",
+        "fecha": "29 abr 2021",
+        "duración": "2:49"
+    },
+    {
+        "id": 7,
+        "titulo": "Take My Breath",
+        "artista": "The Weekend",
+        "album": "Dopamime",
+        "fecha": "29 abr 2021",
+        "duración": "2:49"
+    },
+    {
+        "id": 8,
+        "titulo": "Get Up",
+        "artista": "Rival",
+        "album": "Get Up",
+        "fecha": "28 may 2021",
+        "duración": "2:49"
+    },
+    {
+        "id": 9,
+        "titulo": "Insustry Baby",
+        "artista": "Lil Nas X, Jack Harlow",
+        "album": "Insustry Baby",
+        "fecha": "hace 22 días",
+        "duración": "2:14"
+    },
+    {
+        "id": 10, 
+        "titulo": "Kiss Me More",
+        "artista": "Doja Cat, S2A",
+        "album": "Kiss Me More",
+        "fecha": "hace 22 días",
+        "duración": "2:14"
+    }
+]

@@ -350,9 +350,9 @@ function ex13Filter(productos) {
   let arrayProductos = [];
   for (let pro of productos) {
     if (pro.category === "COMPUTER" || pro.category === "LAPTOP" && pro.discount >= 50) {
-      let descuentoPrice = (pro.price * pro.discount / 100);
+      let descuentoPrecio = (pro.price * pro.discount / 100);
       // AÑADE OTRO OBJECTO JSON DE FINAL PRICE
-      pro.finalPrecio = pro.price - descuentoPrice;
+      pro.finalPrecio = pro.price - descuentoPrecio;
       // .push añade otro objecto json o algo de array
       arrayProductos.push(pro);
     }
