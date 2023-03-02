@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "HTML5, CSS3, JavaScript para Principiantes",
+    "teacher": "Juan pedro",
+    "price": 200,
+    "priceOffer": 100,
+    "img": "curso1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Curso de Comida Vegetariana",
+    "teacher": "Juan pedro",
+    "price": 300,
+    "priceOffer": 100,
+    "img": "curso2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Guitarra de rincipiante a experto",
+    "teacher": "Juan pedro",
+    "price": 250,
+    "priceOffer": 100,
+    "img": "curso3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Huerto en tu casa, come sano siempre",
+    "teacher": "Juan pedro",
+    "price": 275,
+    "priceOffer": 100,
+    "img": "curso4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Decoración con productos de tu hogar",
+    "teacher": "Juan pedro",
+    "price": 200,
+    "priceOffer": 100,
+    "img": "curso5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Diseño Web para Principiantes",
+    "teacher": "Juan pedro",
+    "price": 180,
+    "priceOffer": 100,
+    "img": "curso6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Comida Mexicana para principiantes",
+    "teacher": "Juan pedro",
+    "price": 350,
+    "priceOffer": 100,
+    "img": "curso7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Calistenia de calidad con los mejores profesores",
+    "teacher": "Juan pedro",
+    "price": 350,
+    "priceOffer": 100,
+    "img": "curso8.jpg"
+  }
+]
