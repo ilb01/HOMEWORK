@@ -4,6 +4,7 @@ const contenedorCarrito = document.querySelector("#lista-carrito tbody");
 const vaciarCarritoBtn = document.querySelector("#vaciar-carrito");
 const listaCursos = document.querySelector("#lista-cursos");
 const btnBuscador = document.querySelector("#submit-buscador");
+const orderFilterTag = document.querySelector('#orderFilter');
 let articulosCarrito = [];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -37,6 +38,7 @@ function cargarEventListeners() {
   btnBuscador.addEventListener("click", searchCursos);
 }
 
+
 /**
  * Lee los cursos del json y pinta el HTML central correspondiente
  */
@@ -52,10 +54,10 @@ function cargarCursos(pFilterTitle) {
     .then((listaCursos) => {
       console.debug(listaCursos);
       if (pFilterTitle && pFilterTitle != "") {
-        /* Con expresiones regulares
-          let re = new RegExp('\w'+pFilterTitle+'\w');
-          item=>re.test(item.title);
-         */
+        // Con expresiones regulares
+        let re = new RegExp('\w' + pFilterTitle + '\w');
+        item => re.test(item.title);
+
         listaCursos = listaCursos.filter((curso) =>
           curso.title.toLowerCase().includes(pFilterTitle.toLowerCase())
         );
@@ -67,10 +69,39 @@ function cargarCursos(pFilterTitle) {
     });
 }
 
+function estrellas(){
+    let starsHTML = "";
+    if (curso.stars) {
+      for (let i = 0; i < curso.stars; i++) {
+        // star
+        starsHTML += `<div class="star"></div>`;
+      }
+      // SON 5 ESTRELLAS POR LO TANTO ACABA COMO 5
+      for (let i = curso.stars; i < 5; i++) {
+        // star-off
+        starsHTML += `<div class="star-off"></div>`;
+      }
+      starsHTML = `<div class="score">${starsHTML}</div`
+    }
+}
+// ESTRELLAS
+// let starsHTML = "";
+//     if (curso.stars) {
+//       for (let i = 0; i < curso.stars; i++) {
+//         // star
+//         starsHTML += `<div class="star"></div>`;
+//       }
+//       // SON 5 ESTRELLAS POR LO TANTO ACABA COMO 5
+//       for (let i = curso.stars; i < 5; i++) {
+//         // star-off
+//         starsHTML += `<div class="star-off"></div>`;
+//       }
+//       starsHTML = `<div class="score">${starsHTML}</div`
+//     }
 function pintarCursos(listaCursos) {
   let content = document.querySelector("#list-content");
   content.innerHTML = "";
-
+  
   // Pinta todas las tarjetas con la información de los cursos
   listaCursos.forEach((curso) => {
     let htmlCurso = `
@@ -79,7 +110,7 @@ function pintarCursos(listaCursos) {
           <div class="info-card">
               <h4>${curso.title}</h4>
               <p class="profesor">${curso.teacher}</p>
-              <img src="img/estrellas.png">
+              <img src="img/estrellas.png" alt="">              
               <p class="precio">${curso.price}€ <span class="u-pull-right ">${curso.priceOffer}€</span></p>
               <a href="#" class="u-full-width button-primary button input agregar-carrito"
                   data-id="${curso.id}">Agregar Al Carrito</a>
@@ -89,6 +120,24 @@ function pintarCursos(listaCursos) {
     content.innerHTML += htmlCurso;
   });
 }
+
+// FILTRAR POR NOMBRE
+const sortCursos = () => {
+  let index = orderFilterTag.selectedIndex;
+  let option = orderFilterTag.options[index];
+  let nuevaLista = [];
+  if (option.value === 'N') {
+    nuevaLista = listaCursos.sort((a, b) => {
+      if (a.title > b.title) return 1;
+      else if (a.title < b.title) return -1;
+      else return 0;
+    });
+  }
+  else {
+    return;
+  }
+  pintarCursos(nuevaLista);
+};
 
 /**
  * Lee el contenido del HTML al que le dimos click y lo añade al carrito

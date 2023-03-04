@@ -5,6 +5,7 @@
     "teacher": "Juan pedro",
     "price": 200,
     "priceOffer": 100,
+    "stars": 1,
     "img": "curso1.jpg"
   },
   {
@@ -13,14 +14,16 @@
     "teacher": "Juan pedro",
     "price": 300,
     "priceOffer": 100,
+    "stars": 4,
     "img": "curso2.jpg"
   },
   {
     "id": 3,
-    "title": "Guitarra de rincipiante a experto",
+    "title": "Guitarra de principiante a experto",
     "teacher": "Juan pedro",
     "price": 250,
     "priceOffer": 100,
+    "stars": 5,
     "img": "curso3.jpg"
   },
   {
@@ -29,6 +32,7 @@
     "teacher": "Juan pedro",
     "price": 275,
     "priceOffer": 100,
+    "stars": 3,
     "img": "curso4.jpg"
   },
   {
@@ -37,6 +41,7 @@
     "teacher": "Juan pedro",
     "price": 200,
     "priceOffer": 100,
+    "stars": 3,
     "img": "curso5.jpg"
   },
   {
@@ -45,6 +50,7 @@
     "teacher": "Juan pedro",
     "price": 180,
     "priceOffer": 100,
+    "stars": 5,
     "img": "curso6.jpg"
   },
   {
@@ -53,6 +59,7 @@
     "teacher": "Juan pedro",
     "price": 350,
     "priceOffer": 100,
+    "stars": 1,
     "img": "curso7.jpg"
   },
   {
@@ -61,6 +68,16 @@
     "teacher": "Juan pedro",
     "price": 350,
     "priceOffer": 100,
+    "stars": 3,
     "img": "curso8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Aprende Vue",
+    "teacher": "Emilio Valdivia",
+    "price": 450,
+    "priceOffer": 100,
+    "stars": 4,
+    "img": "curso9.jpg"
   }
 ]

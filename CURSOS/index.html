@@ -5,11 +5,13 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Carrito</title>
+      <title>CURSO LANDIA </title>
       <link rel="stylesheet" href="./css/normalize.css">
       <link rel="stylesheet" href="./css/skeleton.css">
       <link rel="stylesheet" href="./css/custom.css">
-<!-- DOS JAVASCRIPT -->
+      <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+      
+      <!-- DOS JAVASCRIPT -->
       <script defer="defer" src="./js/sweetalert2.all.min.js"></script>
       <script defer="defer" src="./js/app.js"></script>
    </head>
@@ -94,7 +96,14 @@
       <!-- Central lista de cursos -->
       <main id="lista-cursos" class="container">
          <h1 id="encabezado" class="encabezado">Cursos online y presenciales</h1>
+         <div>
+            <select name="order" id="orderFilter">
+               <option value="-1">-</option>
+               <option value="N">Ordenar por nombre (A-Z)</option>
+            </select>
+         </div>
          <section id="list-content"></section>
+         <img src="" alt="">
       </main>
 
       <!--Footer-->

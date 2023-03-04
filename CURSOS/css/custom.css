@@ -244,6 +244,28 @@ ul {
   margin: 10px 0;
 }
 
+/* ESTRELLAS */
+.score {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  padding: 0.2rem 0;
+}
+.star, .star-off {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  background-color: yellow;
+  clip-path: polygon(50% 0%, 70% 25%, 98% 35%, 78% 63%, 79% 91%, 50% 76%, 21% 91%, 21% 62%, 2% 35%, 32% 24%);
+}
+
+.star-off {
+
+  background-color: #ccc;
+
+}
+
 /* Footer */
 /*--------------------------*/
 .footer {
