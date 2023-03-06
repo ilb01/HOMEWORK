@@ -104,15 +104,28 @@ function pintarCursos(listaCursos) {
   
   // Pinta todas las tarjetas con la información de los cursos
   listaCursos.forEach((curso) => {
+    let starsHTML = "";
+      if (curso.stars) {
+        for (let i = 0; i < curso.stars; i++) {
+          // star
+          starsHTML += `<div class="star"></div>`;
+        }
+        // SON 5 ESTRELLAS POR LO TANTO ACABA COMO 5
+        for (let i = curso.stars; i < 5; i++) {
+          // star-off
+          starsHTML += `<div class="star-off"></div>`;
+        }
+        starsHTML = `<div class="score">${starsHTML}</div`
+      }
     let htmlCurso = `
         <div class="card">
-          <img src="img/curso${curso.id}.jpg" class="imagen-curso u-full-width">
+          <img src="img/curso${curso.id}.jpg" width="200px" height="150px" class="imagen-curso">
           <div class="info-card">
               <h4>${curso.title}</h4>
               <p class="profesor">${curso.teacher}</p>
-              <img src="img/estrellas.png" alt="">              
+              <p>${starsHTML} </p>
               <p class="precio">${curso.price}€ <span class="u-pull-right ">${curso.priceOffer}€</span></p>
-              <a href="#" class="u-full-width button-primary button input agregar-carrito"
+              <a href="#" class="button agregar-carrito"
                   data-id="${curso.id}">Agregar Al Carrito</a>
           </div>
         </div

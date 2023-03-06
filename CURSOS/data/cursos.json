@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "title": "HTML5, CSS3, JavaScript para Principiantes",
-    "teacher": "Juan pedro",
+    "title": "Aprende Cisco Packet Tracer",
+    "teacher": "Toni de Andrés",
     "price": 200,
     "priceOffer": 100,
     "stars": 1,
@@ -10,8 +10,8 @@
   },
   {
     "id": 2,
-    "title": "Curso de Comida Vegetariana",
-    "teacher": "Juan pedro",
+    "title": "Aprende Docker",
+    "teacher": "Bartomeu Vives",
     "price": 300,
     "priceOffer": 100,
     "stars": 4,
@@ -19,8 +19,8 @@
   },
   {
     "id": 3,
-    "title": "Guitarra de principiante a experto",
-    "teacher": "Juan pedro",
+    "title": "Aprende Ubuntu",
+    "teacher": "Daniel Ferrer",
     "price": 250,
     "priceOffer": 100,
     "stars": 5,
@@ -28,8 +28,8 @@
   },
   {
     "id": 4,
-    "title": "Huerto en tu casa, come sano siempre",
-    "teacher": "Juan pedro",
+    "title": "Aprende HTML",
+    "teacher": "Emilio Valdivia",
     "price": 275,
     "priceOffer": 100,
     "stars": 3,
@@ -37,8 +37,8 @@
   },
   {
     "id": 5,
-    "title": "Decoración con productos de tu hogar",
-    "teacher": "Juan pedro",
+    "title": "Aprende CSS",
+    "teacher": "Emilio Valdivia",
     "price": 200,
     "priceOffer": 100,
     "stars": 3,
@@ -46,8 +46,8 @@
   },
   {
     "id": 6,
-    "title": "Diseño Web para Principiantes",
-    "teacher": "Juan pedro",
+    "title": "Aprende JavaScript",
+    "teacher": "Emilio Valdivia",
     "price": 180,
     "priceOffer": 100,
     "stars": 5,
@@ -55,8 +55,8 @@
   },
   {
     "id": 7,
-    "title": "Comida Mexicana para principiantes",
-    "teacher": "Juan pedro",
+    "title": "Aprende MYSQL",
+    "teacher": "Tomeu Vives",
     "price": 350,
     "priceOffer": 100,
     "stars": 1,
@@ -64,20 +64,11 @@
   },
   {
     "id": 8,
-    "title": "Calistenia de calidad con los mejores profesores",
-    "teacher": "Juan pedro",
+    "title": "Aprende Windows Powershell",
+    "teacher": "Daniel Ferrer",
     "price": 350,
     "priceOffer": 100,
     "stars": 3,
     "img": "curso8.jpg"
-  },
-  {
-    "id": 9,
-    "title": "Aprende Vue",
-    "teacher": "Emilio Valdivia",
-    "price": 450,
-    "priceOffer": 100,
-    "stars": 4,
-    "img": "curso9.jpg"
   }
 ]

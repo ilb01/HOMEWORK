@@ -2,6 +2,7 @@
 /*--------------------------*/
 html {
   font-size: 62.5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -24,8 +25,8 @@ h4 {
 /* HEADER */
 /*--------------------------*/
 header {
-  padding: 20px 0 0 0;
-  background: white;
+  padding: 15px 0 0 0;
+  background: #FFFFFF;
   text-align: center;
   position: fixed;
   top: 0;
@@ -39,7 +40,7 @@ header {
 }
 
 #num-cursos {
-  background-color: brown;
+  background-color: #a435f0;
   font-weight: bold;
   color: white;
   display: inline-block;
@@ -56,7 +57,7 @@ header {
 }
 
 .borrar-curso {
-  background-color: red;
+  background-color: #8a28ca;
   border-radius: 50%;
   padding: 5px 10px;
   text-decoration: none;
@@ -105,17 +106,27 @@ ul {
 
 .vacio {
   padding: 10px;
-  background-color: crimson;
+  background-color: #a435f0;
   text-align: center;
   border-radius: 10px;
+  color: white;
+}
+
+.button {
+  background-color: #a435f0;
+  color: white;
+}
+
+.button:hover {
   color: white;
 }
 
 /* Banner */
 /*--------------------------*/
 .contenido-banner {
-  margin-top: 80px;
+  padding-top: 100px;
   color: white;
+  padding-bottom: 100px;
 }
 
 .contenido-banner form {
@@ -147,27 +158,13 @@ ul {
 /*--------------------------*/
 .barra {
   padding: 20px 0;
-  background: #741d51;
-  /* Old browsers */
-  background: -moz-linear-gradient(left,
-      #741d51 0%,
-      #e44e52 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(left,
-      #741d51 0%,
-      #e44e52 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right,
-      #741d51 0%,
-      #e44e52 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#741d51', endColorstr='#e44e52', GradientType=1);
-  /* IE6-9 */
+  background-color: #A435F0;
 }
 
 .barra p {
   margin: 0;
   color: white;
+  font-weight: bold;
 }
 
 .icono {
@@ -252,23 +249,23 @@ ul {
   width: 50%;
   padding: 0.2rem 0;
 }
+
 .star, .star-off {
   width: 2rem;
   height: 2rem;
   margin-right: 0.5rem;
-  background-color: yellow;
+  background-color: #E59819;
   clip-path: polygon(50% 0%, 70% 25%, 98% 35%, 78% 63%, 79% 91%, 50% 76%, 21% 91%, 21% 62%, 2% 35%, 32% 24%);
 }
 
 .star-off {
-
   background-color: #ccc;
-
 }
 
 /* Footer */
 /*--------------------------*/
 .footer {
+  background-color: #1C1D1F;
   margin-top: 40px;
   border-top: 1px solid #aaa;
   padding-top: 40px;
@@ -278,4 +275,6 @@ ul {
   display: block;
   margin-bottom: 10px;
   text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
