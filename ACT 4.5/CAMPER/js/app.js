@@ -50,7 +50,7 @@ const changeView = (number) => {
 };
 
 
-   // FUNCIÓN DE ORDENAR (Clasificar por nombre o por precio)
+// FUNCIÓN DE ORDENAR (Clasificar por nombre o por precio)
 const sortShoes = () => {
    let index = orderFilterTag.selectedIndex;
    let option = orderFilterTag.options[index];

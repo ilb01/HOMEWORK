@@ -1,4 +1,75 @@
 const gridSimilars = document.querySelector('.grid-similares');
+let seasonsJSON = [];
+// PARA HACER EL ACTIVE 
+let currentSeason = 1;
+
+const getSeasons = () => {
+    fetch("./data/seasons-things.json")
+        .then(res => res.json())
+        .then(data => {
+            // para coger el json de a partir season 
+            seasonsJSON = data.seasons;
+            renderSeasons(seasonsJSON);
+        })
+        .catch(error => {
+            console.log(error);
+        })
+}
+
+const renderSeasons = (list) => { 
+    // PARA SACAR
+    const currentSeasonStorage = localStorage.getItem("currentSeason");
+    if(currentSeasonStorage) currentSeason=parseInt(currentSeasonStorage, 10); // parseInt --> para pasar a cadena de texto
+
+    const seasonsContainer = document.querySelector('#nav-temporada');
+    seasonsContainer.innerHTML="";// para vaciar 
+    for (let i = 0; i < seasonsJSON.length; i++) {
+        let numberSeason = i + 1;
+        seasonsContainer.innerHTML+=`
+        <a href="#episodes-container" 
+        id="season-${numberSeason}" 
+        onclick="showEpisodes(${numberSeason})"
+        class="${currentSeason === numberSeason?"active":""}">
+        Temporada ${numberSeason}
+        </a>
+        `;
+    }
+    showEpisodes(currentSeason);
+}
+
+const showEpisodes = (numberSeason) => { 
+        currentSeason=numberSeason;
+        // localStorage hace que cuando refrescamos la página se guardará
+        localStorage.setItem("currentSeason", currentSeason);
+
+        // PARA TENER ACTIVA O NO
+        document.querySelector('#nav-temporada .active').classList.remove("active");
+        document.querySelector(`#season-${currentSeason}`).classList.add("active");
+        const episodesContainer = document.querySelector('.episodes');
+        episodesContainer.innerHTML="";
+        // Coge la primera array que cumpla esa condición
+        const episodes = seasonsJSON.find(season=>season.number===currentSeason).episodes;
+        episodes.forEach(e => {
+            episodesContainer.innerHTML+=`
+                <article class="item-episode">
+                    <div class="number">${e.number}</div>
+                    <div class="play-episode">
+                        <img src="./img/${e.image}" alt="">
+                        <progress value="${e.progress}" max="100"> ${e.progress}% </progress>
+                        <div class="play-episode-icon"></div>
+                    </div>
+                    <div class="desc">
+                        <div class="container-title">
+                            <h3>${e.title}</h3>
+                            <div class="duration">${e.duration} min</div>
+                        </div>
+                        <p>${e.description}</p>
+                    </div>
+                </article>
+            `;
+        })
+        episodesContainer.innerHTML="<h2>Episodios</h2>" + episodesContainer.innerHTML;
+}
 
 // nfn la primera opción
 // PARA RECOGER EL JSON PARA PONER EN JAVASCRIPT
@@ -11,7 +82,6 @@ const getSeries = () => {
         .catch(error => {
             console.log(error);
         })
-
 }
 const renderListSimiliars = (series) => {
     gridSimilars.innerHTML = "";
@@ -78,5 +148,6 @@ const renderCard = (serie) => {
 
 function init() {
     getSeries();
+    getSeasons();
 }
 init();

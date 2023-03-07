@@ -69,20 +69,20 @@ function cargarCursos(pFilterTitle) {
     });
 }
 
-function estrellas(){
-    let starsHTML = "";
-    if (curso.stars) {
-      for (let i = 0; i < curso.stars; i++) {
-        // star
-        starsHTML += `<div class="star"></div>`;
-      }
-      // SON 5 ESTRELLAS POR LO TANTO ACABA COMO 5
-      for (let i = curso.stars; i < 5; i++) {
-        // star-off
-        starsHTML += `<div class="star-off"></div>`;
-      }
-      starsHTML = `<div class="score">${starsHTML}</div`
+function estrellas() {
+  let starsHTML = "";
+  if (curso.stars) {
+    for (let i = 0; i < curso.stars; i++) {
+      // star
+      starsHTML += `<div class="star"></div>`;
     }
+    // SON 5 ESTRELLAS POR LO TANTO ACABA COMO 5
+    for (let i = curso.stars; i < 5; i++) {
+      // star-off
+      starsHTML += `<div class="star-off"></div>`;
+    }
+    starsHTML = `<div class="score">${starsHTML}</div`
+  }
 }
 // ESTRELLAS
 // let starsHTML = "";
@@ -101,22 +101,22 @@ function estrellas(){
 function pintarCursos(listaCursos) {
   let content = document.querySelector("#list-content");
   content.innerHTML = "";
-  
+
   // Pinta todas las tarjetas con la información de los cursos
   listaCursos.forEach((curso) => {
     let starsHTML = "";
-      if (curso.stars) {
-        for (let i = 0; i < curso.stars; i++) {
-          // star
-          starsHTML += `<div class="star"></div>`;
-        }
-        // SON 5 ESTRELLAS POR LO TANTO ACABA COMO 5
-        for (let i = curso.stars; i < 5; i++) {
-          // star-off
-          starsHTML += `<div class="star-off"></div>`;
-        }
-        starsHTML = `<div class="score">${starsHTML}</div`
+    if (curso.stars) {
+      for (let i = 0; i < curso.stars; i++) {
+        // star
+        starsHTML += `<div class="star"></div>`;
       }
+      // SON 5 ESTRELLAS POR LO TANTO ACABA COMO 5
+      for (let i = curso.stars; i < 5; i++) {
+        // star-off
+        starsHTML += `<div class="star-off"></div>`;
+      }
+      starsHTML = `<div class="score">${starsHTML}</div`
+    }
     let htmlCurso = `
         <div class="card">
           <img src="img/curso${curso.id}.jpg" width="200px" height="150px" class="imagen-curso">

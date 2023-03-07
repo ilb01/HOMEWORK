@@ -1,7 +1,7 @@
 {
   "canciones": [
     {
-      "id":1,
+      "id": 1,
       "titulo": "La Canción",
       "artista": "Sebastián Romero",
       "album": "Quimera",
@@ -9,7 +9,7 @@
       "duracion": "2:2"
     },
     {
-      "id":2,
+      "id": 2,
       "titulo": "Fuentes",
       "artista": "Alex Ferrer",
       "album": "Amorfina",
@@ -17,7 +17,7 @@
       "duracion": "4:3"
     },
     {
-      "id":3,
+      "id": 3,
       "titulo": "Amorfina",
       "artista": "Marion",
       "album": "La canción",
@@ -25,7 +25,7 @@
       "duracion": "3:6"
     },
     {
-      "id":4,
+      "id": 4,
       "titulo": "Gigarrillo y café",
       "artista": "Josue Alaniz",
       "album": "Quimera",
@@ -33,7 +33,7 @@
       "duracion": "3:2"
     },
     {
-      "id":5,
+      "id": 5,
       "titulo": "Quimera",
       "artista": "Alba Reche",
       "album": "Quimera",
@@ -41,7 +41,7 @@
       "duracion": "3:2"
     },
     {
-      "id":6,
+      "id": 6,
       "titulo": "Quimera para siempre",
       "artista": "Alba Reche",
       "album": "Quimera",

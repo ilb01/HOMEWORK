@@ -68,10 +68,10 @@ function filterFigures() {
 
 // Filtre amb programació funcional
 function filterFigures() {
-    let list =[];
-    for (let figure of figuresList){
+    let list = [];
+    for (let figure of figuresList) {
         // El valor de la figura debe estar entre el mínimo y el máximo especificado
-        if (figure.price>=priceMinTag.value && figure.price<=priceTag.value ){
+        if (figure.price >= priceMinTag.value && figure.price <= priceTag.value) {
             list.push(figure);
         }
     }

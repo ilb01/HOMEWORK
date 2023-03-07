@@ -1,18 +1,26 @@
 {
-    "id":1,
-    "nombre":"Ogro Fuerte",
-    "tipo":"Legendario",
+    "id": 1,
+    "nombre": "Ogro Fuerte",
+    "tipo": "Legendario",
     "rango": 10,
-    "nivel":2,
-    "habilidad":{
-        "ataque":100,
-        "defensa":20,
-        "velocidad":5,
-        "resilencia":2
+    "nivel": 2,
+    "habilidad": {
+        "ataque": 100,
+        "defensa": 20,
+        "velocidad": 5,
+        "resilencia": 2
     },
-    "equipo":[
-        {"tipo":"escudo", "nombre":"escudo del inframundo", "puntos":5, "img":"escudo.jpg"},
-        {"tipo":"arma", "nombre":"Espada pesada del dragón", "puntos":80}
+    "equipo": [
+        {
+            "tipo": "escudo",
+            "nombre": "escudo del inframundo",
+            "puntos": 5,
+            "img": "escudo.jpg"
+        },
+        {
+            "tipo": "arma",
+            "nombre": "Espada pesada del dragón",
+            "puntos": 80
+        }
     ]
-
 }

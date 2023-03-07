@@ -1,60 +1,60 @@
 {
-    "page":1,
-    "message":"La operación se ha realizado correctamente",
+    "page": 1,
+    "message": "La operación se ha realizado correctamente",
     "items": [
         {
-            "id":1,
-            "name":"Armena",
-            "price":10,
-            "photo":"armera.jpg"
+            "id": 1,
+            "name": "Armena",
+            "price": 10,
+            "photo": "armera.jpg"
         },
         {
-            "id":2,
-            "name":"Boba Fett",
-            "price":15,
-            "photo":"boba-fett.jpg"
+            "id": 2,
+            "name": "Boba Fett",
+            "price": 15,
+            "photo": "boba-fett.jpg"
         },
         {
-            "id":3,
-            "name":"Jar jar",
-            "price":17,
-            "photo":"jar-jar.jpg"
+            "id": 3,
+            "name": "Jar jar",
+            "price": 17,
+            "photo": "jar-jar.jpg"
         },
         {
-            "id":4,
-            "name":"Hunter",
-            "price":14,
-            "photo":"hunter.jpg"
+            "id": 4,
+            "name": "Hunter",
+            "price": 14,
+            "photo": "hunter.jpg"
         },
         {
-            "id":5,
-            "name":"Jaxxon",
-            "price":14,
-            "photo":"jaxxon.jpg"
+            "id": 5,
+            "name": "Jaxxon",
+            "price": 14,
+            "photo": "jaxxon.jpg"
         },
         {
-            "id":6,
-            "name":"Asajj Ventress",
-            "price":12,
-            "photo":"asajj-ventress.jpg"
+            "id": 6,
+            "name": "Asajj Ventress",
+            "price": 12,
+            "photo": "asajj-ventress.jpg"
         },
         {
-            "id":7,
-            "name":"Bokatan",
-            "price":16,
-            "photo":"bokatan.jpg"
+            "id": 7,
+            "name": "Bokatan",
+            "price": 16,
+            "photo": "bokatan.jpg"
         },
         {
-            "id":8,
-            "name":"Calrissian",
-            "price":14,
-            "photo":"calrissian.jpg"
+            "id": 8,
+            "name": "Calrissian",
+            "price": 14,
+            "photo": "calrissian.jpg"
         },
         {
-            "id":9,
-            "name":"Carnor Jax",
-            "price":14,
-            "photo":"carnor-jax.jpg"
+            "id": 9,
+            "name": "Carnor Jax",
+            "price": 14,
+            "photo": "carnor-jax.jpg"
         }
     ]
 }

@@ -1,28 +1,40 @@
 {
-    "laptops":[
+    "laptops": [
         {
-            "id":1,
-            "name":"Asus 34-HB",
-            "cpu":4,
-            "ram":4,
-            "pantalla":15,
-            "software":["Antivirus", "SO Microsoft","Office 360"]
+            "id": 1,
+            "name": "Asus 34-HB",
+            "cpu": 4,
+            "ram": 4,
+            "pantalla": 15,
+            "software": [
+                "Antivirus",
+                "SO Microsoft",
+                "Office 360"
+            ]
         },
         {
-            "id":2,
-            "name":"Razor 578-H",
-            "cpu":8,
-            "ram":8,
-            "pantalla":16,
-            "software":["Antivirus", "SO Linux","Libre Office"]
+            "id": 2,
+            "name": "Razor 578-H",
+            "cpu": 8,
+            "ram": 8,
+            "pantalla": 16,
+            "software": [
+                "Antivirus",
+                "SO Linux",
+                "Libre Office"
+            ]
         },
         {
-            "id":2,
-            "name":"HP Pavilium 21s",
-            "cpu":12,
-            "ram":16,
-            "pantalla":17,
-            "software":["Antivirus", "SO Ubuntu coret","Open Office"]
+            "id": 2,
+            "name": "HP Pavilium 21s",
+            "cpu": 12,
+            "ram": 16,
+            "pantalla": 17,
+            "software": [
+                "Antivirus",
+                "SO Ubuntu coret",
+                "Open Office"
+            ]
         }
     ]
 }
