@@ -55,6 +55,7 @@ const showEpisodes = (numberSeason) => {
                     <div class="number">${e.number}</div>
                     <div class="play-episode">
                         <img src="./img/${e.image}" alt="">
+                        ${currentSeason === numberSeason?"":""}
                         <progress value="${e.progress}" max="100"> ${e.progress}% </progress>
                         <div class="play-episode-icon"></div>
                     </div>
