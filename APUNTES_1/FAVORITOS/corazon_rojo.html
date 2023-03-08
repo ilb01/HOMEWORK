@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- FONT AWESOME!!! -->
+        <!-- IMPRIMIR CORAZÓN EN JAVASCRIPT -->
+        <!--const printShoes = (shoes) => {
+        productosTag.innerHTML = "";
+        shoes.forEach(e => {
+            let template = `    
+            <article class="card">
+                <img src="./img/${e.image}" alt="" />
+                <p class="name">${e.name}</p>
+                <p>Precio ${e.price}€</p>
+                <p>${e.colors}</p>
+
+                [IMPRIMIR EL CORAZÓN]
+                <div class="favorite">
+                    <i class="fas fa-heart" data-id="${e.id}"></i>
+                </div>
+            </article>`;
+            productosTag.innerHTML += template;
+            });
+        }; -->
+        <!-- CORAZÓN ROJO EN JAVASCRIPT -->
+        <!-- let shoesFavorites = []; -->
+
+        <!-- // LOS ICONOS DE FAVORITOS (EL CORAZÓN ROJO)
+    const handleFavorites = () => {
+    const favoritesList = document.querySelectorAll(".fa-heart");
+    favoritesList.forEach(fav => {
+        fav.addEventListener("click", function () {
+            // This es el icono HTML en el cual el usuario acaba de pulsar
+            this.classList.toggle("on");
+            saveFavorites(this);
+        });
+    });
+};
+
+// FUNCION DE GUARDAR LOS FAVORITOS
+    const saveFavorites = (favObj) => {
+    let idFavorite = favObj.dataset.id;
+    if (favObj.classList.contains("on")) {
+          // Agregar favorito
+        shoesFavorites.push({ "id": idFavorite });
+    } else {
+          // Eliminar favorito
+        shoesFavorites = shoesFavorites.filter(e => e.id != idFavorite);
+    }
+    // Guardar los favoritos  
+    localStorage.setItem("shoesFavorites", JSON.stringify(shoesFavorites));
+    };
+
+    // CARGAR LOS FAVORITOS DE localStorage
+    const loadFavorites = () => {
+    if (localStorage.getItem("shoesFavorites")) {
+        shoesFavorites = JSON.parse(localStorage.getItem("shoesFavorites"));
+    } else {
+        shoesFavorites = [];
+    }
+
+    shoesFavorites.forEach(fav => {
+        document.querySelector(`.fa-heart[data-id="${fav.id}"]`).classList.add("on");
+    });
+}; -->
+    </body>
+</html>

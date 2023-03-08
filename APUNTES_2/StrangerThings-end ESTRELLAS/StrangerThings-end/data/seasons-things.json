@@ -1,0 +1,44 @@
+{
+    "title": "stranger things",
+    "sipnosis": "...",
+    "seasons": [
+        {
+            "number": 1,
+            "episodes": [
+                {
+                    "number": 1,
+                    "duration": 56,
+                    "image": "episode-1.jpg",
+                    "description": "esto es la descripcion del episodio 1",
+                    "title": "tm1 titulo del episodio 2 desde el json"
+                },
+                {
+                    "number": 2,
+                    "duration": 106,
+                    "image": "episode-2.jpg",
+                    "description": "esto es la descripcion del episodio 2 ",
+                    "title": " tm1 titulo del episodio 2 carga desde el .json"
+                }
+            ]
+        },
+        {
+            "number": 2,
+            "episodes": [
+                {
+                    "number": 1,
+                    "duration": 46,
+                    "image": "episode-1.jpg",
+                    "description": "esto es la descripcion del episodio 1",
+                    "title": "tm2 titulo del episodio 1"
+                },
+                {
+                    "number": 2,
+                    "duration": 36,
+                    "image": "episode-2.jpg",
+                    "description": "esto es la descripcion del episodio ",
+                    "title": "tm 2  titulo del episodio 2"
+                }
+            ]
+        }
+    ]
+}

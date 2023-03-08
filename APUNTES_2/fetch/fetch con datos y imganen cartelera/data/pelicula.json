@@ -1,0 +1,13 @@
+[
+    {
+        "id":1,
+        "titulo":"Troya",
+        "img":"troya.jpg",
+        "sinopsi":"El amor de una mujer desata una guerra.",
+        "fecha":"12/3/2004",
+        "edad":18,
+        "genero":["accion "," amor "," politica"],
+        "sesiones":["12:00 "," 14:00 "," 18:00"]
+
+    }
+]

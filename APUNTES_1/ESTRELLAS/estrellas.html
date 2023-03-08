@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ESTRELLAS EN CSS  -->
+    <!-- /* ESTRELLAS */
+    .score {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50%;
+        padding: 0.2rem 0;
+    }
+
+    .star, .star-off {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.5rem;
+        background-color: #E59819;
+        clip-path: polygon(50% 0%, 70% 25%, 98% 35%, 78% 63%, 79% 91%, 50% 76%, 21% 91%, 21% 62%, 2% 35%, 32% 24%);
+    }
+
+    .star-off {
+        background-color: #ccc;
+    } -->
+    <!-- ESTRELLAS EN JAVASCRIPT -->
+    <!-- function pintarCursos(listaCursos) {
+        let content = document.querySelector("#list-content");
+        content.innerHTML = "";
+        
+        // Pinta todas las tarjetas con la información de los cursos
+        listaCursos.forEach((curso) => {
+          let starsHTML = "";
+            if (curso.stars) {
+              for (let i = 0; i < curso.stars; i++) {
+                // star
+                starsHTML += `<div class="star"></div>`;
+              }
+              // SON 5 ESTRELLAS POR LO TANTO ACABA COMO 5
+              for (let i = curso.stars; i < 5; i++) {
+                // star-off
+                starsHTML += `<div class="star-off"></div>`;
+              }
+              starsHTML = `<div class="score">${starsHTML}</div`
+            }
+          let htmlCurso = `
+              <div class="card">
+                <img src="img/curso${curso.id}.jpg" width="200px" height="150px" class="imagen-curso">
+                <div class="info-card">
+                    <h4>${curso.title}</h4>
+                    <p class="profesor">${curso.teacher}</p>
+                    <p>${starsHTML} </p>
+                    <p class="precio">${curso.price}€ <span class="u-pull-right ">${curso.priceOffer}€</span></p>
+                    <a href="#" class="button agregar-carrito"
+                        data-id="${curso.id}">Agregar Al Carrito</a>
+                </div>
+              </div
+          `;
+          content.innerHTML += htmlCurso;
+        });
+      } -->
+  </body>
+</html>

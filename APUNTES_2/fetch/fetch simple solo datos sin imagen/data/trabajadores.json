@@ -1,0 +1,31 @@
+[
+    
+        {
+            "id":1,
+            "nombre": "Pere Ferrer",
+            "telefono":"648-898-769",
+            "especialidad":"seguridad informatica",
+            "departamentos":"sistemas"
+        },
+        {
+            "id":2,
+            "nombre": "Joan Gomila",
+            "telefono":"631-445-779",
+            "especialidad":"python",
+            "departamentos":"desarrollo"
+        },
+        {
+            "id":3,
+            "nombre": "Sara Gomez",
+            "telefono":"653-445-889",
+            "especialidad":"java",
+            "departamentos":"desarrollo"
+        },
+        {
+            "id":4,
+            "nombre": "Xavi Caraibe",
+            "telefono":"908-456-789",
+            "especialidad":"nominas",
+            "departamentos":"administración"
+        }
+]

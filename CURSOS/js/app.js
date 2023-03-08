@@ -69,35 +69,6 @@ function cargarCursos(pFilterTitle) {
     });
 }
 
-function estrellas() {
-  let starsHTML = "";
-  if (curso.stars) {
-    for (let i = 0; i < curso.stars; i++) {
-      // star
-      starsHTML += `<div class="star"></div>`;
-    }
-    // SON 5 ESTRELLAS POR LO TANTO ACABA COMO 5
-    for (let i = curso.stars; i < 5; i++) {
-      // star-off
-      starsHTML += `<div class="star-off"></div>`;
-    }
-    starsHTML = `<div class="score">${starsHTML}</div`
-  }
-}
-// ESTRELLAS
-// let starsHTML = "";
-//     if (curso.stars) {
-//       for (let i = 0; i < curso.stars; i++) {
-//         // star
-//         starsHTML += `<div class="star"></div>`;
-//       }
-//       // SON 5 ESTRELLAS POR LO TANTO ACABA COMO 5
-//       for (let i = curso.stars; i < 5; i++) {
-//         // star-off
-//         starsHTML += `<div class="star-off"></div>`;
-//       }
-//       starsHTML = `<div class="score">${starsHTML}</div`
-//     }
 function pintarCursos(listaCursos) {
   let content = document.querySelector("#list-content");
   content.innerHTML = "";
