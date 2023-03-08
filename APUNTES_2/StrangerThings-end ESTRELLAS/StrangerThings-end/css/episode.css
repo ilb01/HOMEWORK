@@ -44,7 +44,7 @@
 
 .item-episode progress {
     background-color: #bbb;
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     accent-color: red;
 
     width: 100%;
